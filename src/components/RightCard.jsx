@@ -6,12 +6,12 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-function RightCard({ children, className }) {
+function RightCard({ children, className, tooltip }) {
   return (
     <div
-      className={`bg-[#363c43] py-5 px-3 h-[37.5vh] w-full rounded-3xl shadow-[4px_4px_7px_0px_black] flex ${className}`}
+      className={`bg-[#363c43] py-5 px-3 h-[41.5vh] w-full rounded-3xl shadow-[4px_4px_7px_0px_black] flex ${className}`}
     >
-      <div className="flex flex-col h-full mr-3">
+      <div className="flex flex-col h-full lg:mr-3 mr-1">
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger className="relative -ml-1">
@@ -54,11 +54,11 @@ function RightCard({ children, className }) {
               </svg>
             </TooltipTrigger>
             <TooltipContent>
-              <p>Add to library</p>
+              <p>{tooltip}</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
-        <div className="grid grid-cols-2 w-4 gap-[0_4px] mt-[80px]">
+        <div className="grid grid-cols-2 w-4 gap-[0_4px] mt-[95px]">
           <div className="bg-[#4a4e54] mt-[2px] rounded-[1.5px] size-2"></div>
           <div className="bg-[#4a4e54] mt-[2px] rounded-[1.5px] size-2"></div>
           <div className="bg-[#4a4e54] mt-[2px] rounded-[1.5px] size-2"></div>
