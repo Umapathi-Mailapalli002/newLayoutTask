@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.indicator{
-  transition: left .4s;
+.hover-card {
+    width: 0;
+    height:100%;
+    position: absolute;
+    transition: width 0.5s;
+}
+
+.hoverEff:hover .hover-card{
+ width:100%;
 }
 @layer base {
   

@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import LeftCard from './components/LeftCard'
-import RightPostion from './components/RightPostion'
+import {LeftCard, RightPostion} from "./components/index"
 
 
 function App() {
