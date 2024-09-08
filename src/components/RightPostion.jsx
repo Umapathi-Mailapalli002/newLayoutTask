@@ -54,6 +54,7 @@ function RightPostion() {
     const files = Array.from(event.target.files);
     const newImages = files.map((file) => URL.createObjectURL(file));
     setImages((prevImages) => [...prevImages, ...newImages]);
+    alert("Image Added Successfully!")
   };
   return (
     <div className="h-[88vh]">
